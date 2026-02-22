@@ -1,0 +1,9 @@
+name = "contact-worker"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+[vars]
+TO_EMAIL = "your-google-workspace@email.com"
+FROM_EMAIL = "noreply@yourdomain.com"
+TURNSTILE_SECRET = "YOUR_TURNSTILE_SECRET_KEY"
+ALLOWED_ORIGIN = "http://localhost:5173"

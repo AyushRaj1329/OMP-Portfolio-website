@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* =========================
+   Theme Variables
+========================= */
+:root {
+  --background: 220 14% 96%;
+  --foreground: 220 20% 15%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 220 20% 15%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 20% 15%;
+
+  --primary: 215 70% 40%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 215 30% 90%;
+  --secondary-foreground: 215 70% 30%;
+
+  --muted: 220 14% 92%;
+  --muted-foreground: 220 10% 45%;
+
+  --accent: 30 90% 50%;
+  --accent-foreground: 0 0% 100%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 220 14% 88%;
+  --input: 220 14% 88%;
+  --ring: 215 70% 40%;
+
+  --radius: 0.5rem;
+
+
+   --construction-dark: 220 20% 18%;
+    --construction-blue: 215 70% 40%;
+    --construction-blue-light: 215 60% 95%;
+    --construction-gold: 30 90% 50%;
+    --construction-gold-dark: 30 80% 42%;
+    --construction-gray: 220 14% 96%;
+    --construction-gray-dark: 220 10% 75%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+}
+
+.dark {
+  --background: 220 20% 10%;
+  --foreground: 220 14% 96%;
+  --card: 220 20% 14%;
+  --card-foreground: 220 14% 96%;
+  --popover: 220 20% 14%;
+  --popover-foreground: 220 14% 96%;
+  --primary: 215 70% 50%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 215 30% 20%;
+  --secondary-foreground: 215 60% 90%;
+  --muted: 220 20% 18%;
+  --muted-foreground: 220 10% 60%;
+  --accent: 30 90% 55%;
+  --accent-foreground: 0 0% 100%;
+  --border: 220 20% 20%;
+  --input: 220 20% 20%;
+  --ring: 215 70% 50%;
+
+  --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+}
+
+/* =========================
+   Base Styles
+========================= */
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
