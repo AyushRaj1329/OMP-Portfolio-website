@@ -36,7 +36,7 @@ const Navbar = () => {
           href="#hero"
           className="font-display text-2xl font-bold tracking-tight text-[hsl(var(--primary))]"
         >
-          BUILDCRAFT
+          OMPRAKASH
           <span className="text-[hsl(var(--accent))]">.</span>
         </a>
 

@@ -1,18 +1,18 @@
-import { Truck, Cog, Hammer, Container, Drill, Forklift } from "lucide-react";
+import { Truck, Cog, Hammer, Container, Drill, Forklift, Tally4, Shovel, Vibrate, Cylinder, Shell, Blend, Layers } from "lucide-react";
 
 const equipment = [
-  { name: "JCB Excavator", quantity: 5, icon: Truck },
-  { name: "Motor Grader", quantity: 3, icon: Cog },
-  { name: "Vibratory Roller", quantity: 4, icon: Container },
-  { name: "Concrete Mixer", quantity: 8, icon: Hammer },
-  { name: "Poclain Hydraulic Excavator", quantity: 6, icon: Drill },
-  { name: "Tipper Truck", quantity: 12, icon: Truck },
-  { name: "Water Tanker", quantity: 4, icon: Container },
-  { name: "Forklift", quantity: 3, icon: Forklift },
-  { name: "Loader Backhoe", quantity: 5, icon: Cog },
-  { name: "Compactor", quantity: 3, icon: Hammer },
-  { name: "Transit Mixer", quantity: 6, icon: Truck },
-  { name: "Boom Placer", quantity: 2, icon: Drill },
+  { name: "JCB Excavator", quantity: 3, icon: Shovel },
+  { name: "Motor Grader/Leveler", quantity: 2, icon: Cog },
+  { name: "Vibro Roller", quantity: 1, icon: Vibrate },
+  { name: "Simple Roller", quantity: 1, icon: Cylinder },
+  { name: "Tandem Roller", quantity: 1, icon: Shell },
+  { name: "Concrete Mixer", quantity: 20, icon:Blend },
+  { name: "Tractors with Tippers", quantity: 10, icon: Truck },
+  { name: "Batching Plant", quantity: 2, icon: Container },
+  { name: "Steel Shuttering", quantity: 10000, icon: Tally4 },
+  { name: "Structural Fabrication & Erection Tools", quantity: null, icon: Layers },
+  { name: "Survey Instruments", quantity: null, icon: Hammer },
+
 ];
 
 const EquipmentSection = () => {

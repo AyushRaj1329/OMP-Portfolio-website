@@ -1,10 +1,10 @@
-import { Building2, Calendar, Award, Users } from "lucide-react";
+import { Building2, Calendar, VectorSquare, Users } from "lucide-react";
 
 const stats = [
-  { icon: Calendar, value: "15+", label: "Years Experience" },
-  { icon: Building2, value: "250+", label: "Projects Completed" },
-  { icon: Award, value: "50+", label: "Awards & Certifications" },
-  { icon: Users, value: "500+", label: "Team Members" },
+  { icon: Calendar, value: "25+", label: "Years Experience" },
+  { icon: Building2, value: "200+", label: "Projects Completed" },
+  { icon: VectorSquare, value: "15+", label: "Industrial Clients" },
+  { icon: Users, value: "450+", label: "Skilled Workforce" },
 ];
 
 const AboutSection = () => {
@@ -31,14 +31,13 @@ const AboutSection = () => {
             </h3>
 
             <p className="text-[hsl(var(--muted-foreground))] leading-relaxed mb-4">
-              We are a leading civil construction firm dedicated to building robust infrastructure
-              that stands the test of time. From drainage systems and road networks to residential
-              quarters and sewage systems, we deliver projects with precision and quality.
+              Our mission is to deliver high-quality civil engineering and construction services while maintaining the highest standards of safety, quality, and reliability.
+
+
             </p>
 
             <p className="text-[hsl(var(--muted-foreground))] leading-relaxed mb-4">
-              Our expertise extends to constructing cane yards designed for heavy axle load traffic,
-              ensuring durability and safety for industrial operations.
+              Om Prakash Associates is committed to providing efficient infrastructure solutions including building construction, road development, structural works, drainage systems, and industrial projects. We aim to complete every project on time with superior workmanship and technical expertise while maintaining long-term relationships with our clients.
             </p>
 
             <h3 className="font-display text-xl font-bold text-[hsl(var(--primary))] mb-4">
@@ -46,8 +45,9 @@ const AboutSection = () => {
             </h3>
 
             <p className="text-[hsl(var(--muted-foreground))] leading-relaxed">
-              To be the most trusted name in civil construction, recognized for delivering
-              world-class infrastructure that drives economic growth and improves communities.
+              Our vision is to become a trusted and leading civil construction company known for delivering reliable infrastructure and industrial development projects.
+
+              We strive to expand our capabilities, adopt modern construction techniques, and contribute to the development of strong infrastructure while maintaining our commitment to quality, safety, and client satisfaction.
             </p>
           </div>
 
@@ -57,9 +57,9 @@ const AboutSection = () => {
             </h3>
 
             <p className="text-[hsl(var(--muted-foreground))] leading-relaxed mb-3">
-              Established in 2009, we began as a small contracting firm specializing in drainage
-              works. Over the years, we expanded into road construction, residential development,
-              and large-scale industrial projects.
+              Om Prakash Associates was founded by Shri Omprakash Singh and is headquartered in Dhampur, District Bijnor, Uttar Pradesh. The company was established to provide professional civil engineering and construction services in industrial and residential sectors.
+
+              Over the years, the company has gained extensive experience in projects such as road construction, industrial buildings, drainage systems, culverts, and infrastructure development. Through consistent quality work and skilled engineering staff, Om Prakash Associates has successfully completed numerous projects for major clients across different regions.
             </p>
 
             <p className="text-[hsl(var(--muted-foreground))] leading-relaxed">

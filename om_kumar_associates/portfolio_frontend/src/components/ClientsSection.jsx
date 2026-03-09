@@ -1,23 +1,28 @@
 import { Building, Building2, Landmark, Factory } from "lucide-react";
 
 const majorClients = [
-  { name: "National Highways Authority of India", icon: Landmark },
-  { name: "State Public Works Department", icon: Building2 },
-  { name: "City Municipal Corporation", icon: Building },
-  { name: "State Housing Board", icon: Building2 },
-  { name: "Water & Sewage Authority", icon: Landmark },
-  { name: "Sugar Corporation Ltd.", icon: Factory },
+  { name: "Gannon Dunkerly & Company Ltd.", icon: Landmark },
+  { name: "Dwarikesh Group", icon: Building2 },
+  { name: "Bajaj Hindustan Ltd.", icon: Building },
+  { name: "Triveni Engineering & Industries Ltd.", icon: Building2 },
+  { name: "Chaddha Sugar Mills Ltd.", icon: Landmark },
+  { name: "D.S.C.L. Sugar Mill (Azuwapur, Pilibhit)", icon: Factory },
+  { name: "K.R. Paper Mill Ltd.", icon: Factory },
+  { name: "Shri Shyam Paper Mill Ltd.", icon: Factory },
+  { name: "Supertech Eco Village (Ghaziabad)", icon: Building },
+
+
 ];
 
 const regularClients = [
-  "Urban Development Authority",
-  "Irrigation Department",
-  "PMGSY (Rural Roads)",
-  "District Administration",
-  "Agri Industries Ltd.",
-  "State Electricity Board",
-  "Railway Construction Div.",
-  "Port Trust Authority",
+  "Upper Ganges Sugar & Industries Ltd.",
+  "Masoda Sugar Mill Ltd.",
+  "Yadav Sugar Mill Ltd.",
+  "G.D.C. Paper Mill (Lalkuan)",
+  "Shahjahanpur Medical College",
+  "Heptacare Power Industries Ltd.",
+  "A.B. Brosbon Distillery (Haryana)",
+  "D.S.C.L. Sugar Mill (Hardoi)",
 ];
 
 const ClientsSection = () => {

@@ -5,39 +5,38 @@ const staffCategories = [
     icon: Briefcase,
     title: "Management & Engineers",
     roles: [
-      { role: "Project Managers", count: 4 },
-      { role: "Civil Engineers", count: 12 },
-      { role: "Site Engineers", count: 18 },
-      { role: "Quality Engineers", count: 6 },
+      {
+        role: "Graduate Engineers", count: 3
+      },
+      { role: "Diploma Engineers", count: 7 },
+
     ],
   },
   {
     icon: HardHat,
     title: "Supervisors & Foremen",
     roles: [
-      { role: "Site Supervisors", count: 15 },
-      { role: "Foremen", count: 10 },
-      { role: "Safety Officers", count: 5 },
-      { role: "Store Keepers", count: 4 },
+      { role: "Site Supervisors", count: 11 },
+      { role: "Foremen", count: 9 },
+
     ],
   },
   {
     icon: Wrench,
     title: "Skilled Workers",
     roles: [
-      { role: "Masons", count: 60 },
-      { role: "Carpenters", count: 25 },
-      { role: "Plumbers", count: 20 },
-      { role: "Equipment Operators", count: 30 },
+
+      { role: "Electricians", count: 6 },
+
     ],
   },
   {
     icon: Users,
-    title: "Unskilled Labour",
+    title: "Workforce Capacity",
     roles: [
-      { role: "General Labour", count: 200 },
-      { role: "Helpers", count: 80 },
-      { role: "Watchmen", count: 15 },
+      { role: "Skilled Labour", count: 200 },
+      { role: "General Labour", count: 250 },
+     
     ],
   },
 ];
