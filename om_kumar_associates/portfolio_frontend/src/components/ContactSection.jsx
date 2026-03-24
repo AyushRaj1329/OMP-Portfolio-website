@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from "@emailjs/browser";
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -30,26 +31,39 @@ const ContactSection = () => {
 //       setLoading(false);
 //     }, 1000);
 //   };
-
 const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
+  e.preventDefault();
+  setLoading(true);
 
-    const token = document.querySelector(
-        'textarea[name="cf-turnstile-response"]'
-    )?.value;
+  try {
+    await emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      {
+        name: form.name,
+        email: form.email,
+        phone: form.phone,
+        message: form.message,
+      },
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    );
 
-    const response = await fetch("YOUR_WORKER_URL", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-        ...form,
-        token,
-        company: "", // honeypot
-        }),
+    toast({
+      title: "Message Sent!",
+      description: "We'll get back to you shortly.",
     });
 
-    setLoading(false);
+    setForm({ name: "", email: "", phone: "", message: "" });
+
+  } catch (error) {
+    toast({
+      title: "Error",
+      description: "Something went wrong!",
+      variant: "destructive",
+    });
+  }
+
+  setLoading(false);
 };
 
   return (
