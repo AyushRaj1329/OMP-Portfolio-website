@@ -1,5 +1,7 @@
 import { FileDown, Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
+
 
 const Footer = () => {
   return (
@@ -7,10 +9,16 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="font-display text-2xl font-bold mb-4">
-              BUILDCRAFT<span className="text-[hsl(var(--accent))]">.</span>
-            </h3>
-
+             <a
+          href="#hero"
+          className="flex items-center gap-2"
+        >
+          <img
+            src={logo}
+            alt="OMP Logo"
+            className="h-30 w-auto object-contain"
+          />
+        </a>
             <p className="text-[hsl(var(--primary-foreground)/0.7)] text-sm leading-relaxed">
               Building robust infrastructure that stands the test of time.
               Drainage, roads, residential quarters, sewage systems, and cane yards.
@@ -29,7 +37,7 @@ const Footer = () => {
                   className="text-[hsl(var(--accent))] shrink-0"
                 />
                 <span>
-                  123 Construction Avenue, Industrial Area, City - 400001
+                  Teachers colony, <br /> Opp. SBI <br /> Kalagarh Road <br /> Dhampur-246 761<br /> Distt.Bijnor <br /> Uttar Pradesh
                 </span>
               </div>
 
@@ -38,7 +46,7 @@ const Footer = () => {
                   size={16}
                   className="text-[hsl(var(--accent))] shrink-0"
                 />
-                <span>+91 98765 43210</span>
+                <span>+91 94121 53022</span>
               </div>
 
               <div className="flex items-center gap-2">
@@ -46,7 +54,7 @@ const Footer = () => {
                   size={16}
                   className="text-[hsl(var(--accent))] shrink-0"
                 />
-                <span>info@buildcraft.com</span>
+                <span>omprakashassociatesdpr@gmail.com  </span>
               </div>
             </div>
           </div>
@@ -89,7 +97,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-[hsl(var(--primary-foreground)/0.1)] pt-6 text-center text-sm text-[hsl(var(--primary-foreground)/0.5)]">
-          © {new Date().getFullYear()} BuildCraft Construction. All rights reserved.
+          © {new Date().getFullYear()} OM Prakash Associates. All rights reserved.
         </div>
       </div>
     </footer>

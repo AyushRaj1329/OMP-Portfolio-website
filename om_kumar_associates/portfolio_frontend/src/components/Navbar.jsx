@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { label: "Home", href: "#hero" },
@@ -25,19 +26,21 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
           ? "bg-[hsl(var(--card)/0.95)] backdrop-blur-md shadow-lg border-b border-[hsl(var(--border))]"
           : "bg-transparent"
-      }`}
+        }`}
     >
-      <div className="container mx-auto flex items-center justify-between px-4 py-3">
+      <div className="container mx-auto flex items-center justify-between px-4 py-1">
         <a
           href="#hero"
-          className="font-display text-2xl font-bold tracking-tight text-[hsl(var(--primary))]"
+          className="flex items-center gap-2"
         >
-          OMPRAKASH
-          <span className="text-[hsl(var(--accent))]">.</span>
+          <img
+            src={logo}
+            alt="OMP Logo"
+            className="h-25 w-auto object-contain"
+          />
         </a>
 
         {/* Desktop */}
@@ -46,11 +49,10 @@ const Navbar = () => {
             <a
               key={link.href}
               href={link.href}
-              className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
-                scrolled
+              className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${scrolled
                   ? "text-[hsl(var(--foreground))] hover:text-[hsl(var(--primary))] hover:bg-[hsl(var(--secondary))]"
                   : "text-[hsl(var(--card-foreground)/0.9)] hover:text-[hsl(var(--accent))]"
-              }`}
+                }`}
             >
               {link.label}
             </a>

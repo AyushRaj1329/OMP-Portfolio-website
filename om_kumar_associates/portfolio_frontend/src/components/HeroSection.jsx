@@ -17,7 +17,7 @@ const HeroSection = () => {
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-[hsl(var(--construction-dark)/0.7)]" />
 
-      <div className="relative z-10 container mx-auto px-4 text-center">
+      <div className="relative z-10 container mx-auto py-25 px-4 text-center">
         <p className="font-display text-[hsl(var(--accent))] text-lg md:text-xl font-semibold tracking-widest uppercase mb-4">
           WE WORK WITH NATURE        </p>
 

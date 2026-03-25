@@ -106,7 +106,7 @@ const handleSubmit = async (e) => {
                     Office Address
                   </p>
                   <p className="text-sm text-[hsl(var(--muted-foreground))]">
-                    123 Construction Avenue, Industrial Area, City - 400001
+                    Teachers colony, Opp. SBI , Kalagarh Road , Dhampur-246 761, Distt.Bijnor , Uttar Pradesh
                   </p>
                 </div>
               </div>
@@ -120,7 +120,7 @@ const handleSubmit = async (e) => {
                     Phone
                   </p>
                   <p className="text-sm text-[hsl(var(--muted-foreground))]">
-                    +91 98765 43210
+                    +91 94121 53022
                   </p>
                 </div>
               </div>
@@ -134,7 +134,7 @@ const handleSubmit = async (e) => {
                     Email
                   </p>
                   <p className="text-sm text-[hsl(var(--muted-foreground))]">
-                    info@buildcraft.com
+                    omprakashassociatesdpr@gmail.com
                   </p>
                 </div>
               </div>
