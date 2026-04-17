@@ -15,14 +15,17 @@ const majorClients = [
 ];
 
 const regularClients = [
+  "D.S.C.L. Sugar Mill",
+  "Dwarikesh Sugar Industries Ltd.",
   "Upper Ganges Sugar & Industries Ltd.",
-  "Masoda Sugar Mill Ltd.",
-  "Yadav Sugar Mill Ltd.",
-  "G.D.C. Paper Mill (Lalkuan)",
-  "Shahjahanpur Medical College",
-  "Heptacare Power Industries Ltd.",
-  "A.B. Brosbon Distillery (Haryana)",
-  "D.S.C.L. Sugar Mill (Hardoi)",
+  "Bundki Dwarikesh Sugar Ltd.",
+  "Fareedpur Dwarikesh Sugar",
+  "Chaddha Sugar Mill (Punjab)",
+  "Swan Aluminum Ltd. (Himachal Pradesh)",
+  "Supertech Eco Village (Ghaziabad)",
+  "Akshaya Patra Foundation (ISCON Trust)",
+  "Hygena Group (Himachal Pradesh)",
+  "Trivatinath Sugars & Chemicals Pvt. Ltd."
 ];
 
 const ClientsSection = () => {

@@ -1,45 +1,136 @@
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import {
-  Table,
-  TableHeader,
-  TableBody,
-  TableRow,
-  TableHead,
-  TableCell,
-} from "@/components/ui/table";
-import { Badge } from "@/components/ui/badge";
-
 const projectsByYear = {
-  "2024": [
-    { name: "NH-47 Highway Extension", client: "National Highways Authority", type: "Road", amount: "₹12.5 Cr" },
-    { name: "Municipal Drainage Phase-III", client: "City Municipal Corporation", type: "Drainage", amount: "₹4.8 Cr" },
-    { name: "Green Valley Residential Colony", client: "State Housing Board", type: "Residential", amount: "₹18.2 Cr" },
-    { name: "Industrial Cane Yard - Unit B", client: "Sugar Corp Ltd.", type: "Cane Yard", amount: "₹6.3 Cr" },
-  ],
-  "2023": [
-    { name: "District Road Resurfacing", client: "PWD", type: "Road", amount: "₹8.1 Cr" },
-    { name: "Sewage Treatment Plant Expansion", client: "Water Authority", type: "Sewage", amount: "₹15.7 Cr" },
-    { name: "Township Development Phase-II", client: "Urban Development Authority", type: "Residential", amount: "₹22.0 Cr" },
-    { name: "Storm Water Drain Network", client: "City Municipal Corporation", type: "Drainage", amount: "₹5.4 Cr" },
-  ],
-  "2022": [
-    { name: "State Highway SH-12 Widening", client: "State Highways Dept", type: "Road", amount: "₹20.5 Cr" },
-    { name: "Cane Yard Heavy Axle Pavement", client: "Agri Industries Ltd.", type: "Cane Yard", amount: "₹9.8 Cr" },
-    { name: "Underground Sewage Line", client: "Water Authority", type: "Sewage", amount: "₹7.2 Cr" },
-  ],
-  "2021": [
-    { name: "Rural Road Connectivity Project", client: "PMGSY", type: "Road", amount: "₹11.0 Cr" },
-    { name: "Residential Quarters - Govt Staff", client: "State Govt.", type: "Residential", amount: "₹14.3 Cr" },
-    { name: "Main Drain Rehabilitation", client: "Irrigation Dept", type: "Drainage", amount: "₹3.9 Cr" },
-  ],
-};
+  "2024": {
+    clients: [
+      "D.S.C.L. Sugar mill Ajbapur, Lakhimpur Kheri (U.P.)",
+      "D.S.C.L. Sugar mill Haryama (Hardoi) (U.P.)",
+      "Dwarikesh Sugar Afzalgarh (Bijnor) (U.P.)",
+      "D.S.C.L. Sugar mill Haryama (Loni) (U.P.)",
+      "Bundki Dwarikesh Sugar Ltd, Bijnor",
+      "Fareedpur Dwarikesh Sugar Bareilly",
+      "Super Tech Eco Village Phase-II Ghaziabad (U.P.)",
+      "Akshaya Patra Foundation (ISCON Temple Trust)",
+      "Hygena Group Himachal Pradesh",
+      "Trivatinath Sugars and Chemicals Pvt Ltd"
+    ],
+    totalBudget: "₹22.50 Cr"
+  },
 
-const typeColor = {
-  Road: "bg-[hsl(var(--primary)/0.1)] text-[hsl(var(--primary))]",
-  Drainage: "bg-blue-100 text-blue-800",
-  Residential: "bg-green-100 text-green-800",
-  "Cane Yard": "bg-[hsl(var(--accent)/0.2)] text-[hsl(var(--accent))]",
-  Sewage: "bg-purple-100 text-purple-800",
+  "2023": {
+    clients: [
+      "D.S.C.L. Sugar mill Ajbapur, Lakhimpur Kheri (U.P.)",
+      "D.S.C.L. Sugar mill Haryama (Hardoi) (U.P.)",
+      "Dwarikesh Sugar Afzalgarh (Bijnor) (U.P.)",
+      "D.S.C.L. Sugar mill Haryama (Loni) (U.P.)",
+      "Bundki Dwarikesh Sugar Ltd, Bijnor",
+      "Fareedpur Dwarikesh Sugar Bareilly",
+      "Super Tech Eco Village Phase-II Ghaziabad (U.P.)",
+      "Akshaya Patra Foundation (ISCON Temple Trust)",
+      "Hygena Group Himachal Pradesh",
+      "Trivatinath Sugars and Chemicals Pvt Ltd"
+    ],
+    totalBudget: "₹22.00 Cr"
+  },
+
+  "2022": {
+    clients: [
+      "D.S.C.L. Sugar mill Ajbapur, Lakhimpur Kheri (U.P.)",
+      "D.S.C.L. Sugar mill Haryama (Hardoi) (U.P.)",
+      "Dwarikesh Sugar Afzalgarh (Bijnor) (U.P.)",
+      "Bundki Dwarikesh Sugar Ltd, Bijnor",
+      "Fareedpur Dwarikesh Sugar Bareilly",
+      "Super Tech Eco Village Phase-II Ghaziabad (U.P.)",
+      "Akshaya Patra Foundation (ISCON Temple Trust)"
+    ],
+    totalBudget: "₹22.50 Cr"
+  },
+
+  "2021": {
+    clients: [
+      "D.S.C.L. Sugar mill Ajbapur, Lakhimpur Kheri (U.P.)",
+      "D.S.C.L. Sugar mill Haryama (Hardoi) (U.P.)",
+      "Dwarikesh Sugar Afzalgarh (Bijnor) (U.P.)",
+      "Bundki Dwarikesh Sugar Ltd, Bijnor",
+      "Fareedpur Dwarikesh Sugar Bareilly",
+      "Super Tech Eco Village Phase-II Ghaziabad (U.P.)"
+    ],
+    totalBudget: "₹19.50 Cr"
+  },
+
+  "2020": {
+    clients: [
+      "D.S.C.L. Sugar mill Ajbapur, Lakhimpur Kheri (U.P.)",
+      "D.S.C.L. Sugar mill Haryama (Hardoi) (U.P.)",
+      "Dwarikesh Sugar Afzalgarh (Bijnor) (U.P.)",
+      "Bundki Dwarikesh Sugar Ltd, Bijnor",
+      "Fareedpur Dwarikesh Sugar Bareilly",
+      "Chaddha Sugar mill Keeri (Gurdaspur) Punjab",
+      "Swan Aluminum Ltd. Baddi (Himachal)",
+      "Super Tech Eco Village Phase-II Ghaziabad (U.P.)",
+      "Upper Ganges Sugar & Industries Ltd, Seohara (Bijnor) U.P."
+    ],
+    totalBudget: "₹14.59 Cr"
+  },
+
+  "2019": {
+    clients: [
+      "D.S.C.L. Sugar mill Ajbapur, Lakhimpur Kheri (U.P.)",
+      "D.S.C.L. Sugar mill Haryama (Hardoi) (U.P.)",
+      "Dwarikesh Sugar Afzalgarh (Bijnor) (U.P.)",
+      "Bundki Dwarikesh Sugar Ltd, Bijnor",
+      "Fareedpur Dwarikesh Sugar Bareilly",
+      "Chaddha Sugar mill Keeri (Gurdaspur) Punjab",
+      "Swan Aluminum Ltd. Baddi (Himachal)",
+      "Super Tech Eco Village Phase-II Ghaziabad (U.P.)",
+      "Upper Ganges Sugar & Industries Ltd, Seohara (Bijnor) U.P."
+    ],
+    totalBudget: "₹10.91 Cr"
+  },
+
+  "2018": {
+    clients: [
+      "D.S.C.L. Sugar mill Ajbapur, Lakhimpur Kheri (U.P.)",
+      "D.S.C.L. Sugar mill Haryama (Hardoi) (U.P.)",
+      "Dwarikesh Sugar Afzalgarh (Bijnor) (U.P.)",
+      "Bundki Dwarikesh Sugar Ltd, Bijnor",
+      "Fareedpur Dwarikesh Sugar Bareilly",
+      "Chaddha Sugar mill Keeri (Gurdaspur) Punjab",
+      "Swan Aluminum Ltd. Baddi (Himachal)",
+      "Super Tech Eco Village Phase-II Ghaziabad (U.P.)",
+      "Upper Ganges Sugar & Industries Ltd, Seohara (Bijnor) U.P."
+    ],
+    totalBudget: "₹11.27 Cr"
+  },
+
+  "2017": {
+    clients: [
+      "D.S.C.L. Sugar mill Ajbapur, Lakhimpur Kheri (U.P.)",
+      "D.S.C.L. Sugar mill Haryama (Hardoi) (U.P.)",
+      "Dwarikesh Sugar Afzalgarh (Bijnor) (U.P.)",
+      "Bundki Dwarikesh Sugar Ltd, Bijnor",
+      "Fareedpur Dwarikesh Sugar Bareilly",
+      "Chaddha Sugar mill Keeri (Gurdaspur) Punjab",
+      "Swan Aluminum Ltd. Baddi (Himachal)",
+      "Super Tech Eco Village Phase-II Ghaziabad (U.P.)",
+      "Upper Ganges Sugar & Industries Ltd, Seohara (Bijnor) U.P."
+    ],
+    totalBudget: "₹12.70 Cr"
+  },
+
+  "2016": {
+    clients: [
+      "D.S.C.L. Sugar mill Ajbapur, Lakhimpur Kheri (U.P.)",
+      "D.S.C.L. Sugar mill Haryama (Hardoi) (U.P.)",
+      "Dwarikesh Sugar Afzalgarh (Bijnor) (U.P.)",
+      "Bundki Dwarikesh Sugar Ltd, Bijnor",
+      "Fareedpur Dwarikesh Sugar Bareilly",
+      "Chaddha Sugar mill Keeri (Gurdaspur) Punjab",
+      "Swan Aluminum Ltd. Baddi (Himachal)",
+      "Super Tech Eco Village Phase-II Ghaziabad (U.P.)",
+      "Upper Ganges Sugar & Industries Ltd, Seohara (Bijnor) U.P."
+    ],
+    totalBudget: "₹17.50 Cr"
+  }
 };
 
 const years = Object.keys(projectsByYear).sort((a, b) => +b - +a);
@@ -51,6 +142,8 @@ const YearlyWorkSection = () => {
       className="py-20 bg-[hsl(var(--secondary)/0.3)]"
     >
       <div className="container mx-auto px-4">
+
+        {/* Heading */}
         <div className="text-center mb-12">
           <p className="font-display text-[hsl(var(--accent))] text-sm font-semibold tracking-widest uppercase mb-2">
             Our Portfolio
@@ -61,8 +154,9 @@ const YearlyWorkSection = () => {
           </h2>
         </div>
 
+        {/* Tabs */}
         <Tabs defaultValue={years[0]} className="w-full">
-          <TabsList className="flex flex-wrap justify-center gap-1 bg-[hsl(var(--card))] border border-[hsl(var(--border))] mb-8 h-auto p-2">
+          <TabsList className="flex flex-wrap justify-center gap-2 bg-[hsl(var(--card))] border border-[hsl(var(--border))] mb-8 h-auto p-2">
             {years.map((year) => (
               <TabsTrigger
                 key={year}
@@ -74,59 +168,59 @@ const YearlyWorkSection = () => {
             ))}
           </TabsList>
 
+          {/* Content */}
           {years.map((year) => (
             <TabsContent key={year} value={year}>
-              <div className="bg-[hsl(var(--card))] border border-[hsl(var(--border))] rounded-xl overflow-hidden">
-                <Table>
-                  <TableHeader>
-                    <TableRow className="bg-[hsl(var(--primary)/0.05)]">
-                      <TableHead className="font-display font-bold">
-                        Project Name
-                      </TableHead>
-                      <TableHead className="font-display font-bold">
-                        Client / Organization
-                      </TableHead>
-                      <TableHead className="font-display font-bold">
-                        Type
-                      </TableHead>
-                      <TableHead className="font-display font-bold text-right">
-                        Contract Amount
-                      </TableHead>
-                    </TableRow>
-                  </TableHeader>
+              <div className="bg-[hsl(var(--card))] border border-[hsl(var(--border))] rounded-2xl p-6 md:p-10">
 
-                  <TableBody>
-                    {projectsByYear[year].map((project, idx) => (
-                      <TableRow key={idx}>
-                        <TableCell className="font-medium">
-                          {project.name}
-                        </TableCell>
+                {/* Year Title */}
+                <h3 className="text-center text-2xl font-bold mb-8 text-[hsl(var(--primary))]">
+                  Year {year} Work Summary
+                </h3>
 
-                        <TableCell>
-                          {project.client}
-                        </TableCell>
+                {/* Layout */}
+                <div className="grid md:grid-cols-3 gap-6">
 
-                        <TableCell>
-                          <span
-                            className={`inline-block px-2 py-0.5 rounded-full text-xs font-semibold ${
-                              typeColor[project.type] ||
-                              "bg-[hsl(var(--muted))] text-[hsl(var(--muted-foreground))]"
-                            }`}
-                          >
-                            {project.type}
-                          </span>
-                        </TableCell>
+                  {/* LEFT - Companies */}
+                  <div className="md:col-span-2 border border-[hsl(var(--border))] rounded-xl p-6">
 
-                        <TableCell className="text-right font-display font-bold text-[hsl(var(--primary))]">
-                          {project.amount}
-                        </TableCell>
-                      </TableRow>
-                    ))}
-                  </TableBody>
-                </Table>
+                    <h4 className="text-xl font-semibold text-center border-b pb-2">
+                      Companies Completed Work For
+                    </h4>
+
+                    <div className="space-y-3 mt-4">
+                      {projectsByYear[year].clients.map((client, idx) => (
+                        <div
+                          key={idx}
+                          className="border border-[hsl(var(--border))] rounded-lg px-4 py-2"
+                        >
+                          {client}
+                        </div>
+                      ))}
+                    </div>
+
+                  </div>
+
+                  {/* RIGHT - Budget */}
+                  <div className="border border-[hsl(var(--border))] rounded-xl p-6 flex flex-col justify-between">
+
+                    <h4 className="text-xl font-semibold text-center border-b pb-2">
+                      Total Budget of the Year
+                    </h4>
+
+                    <div className="flex items-center justify-center grow">
+                      <div className="border border-[hsl(var(--border))] rounded-xl px-6 py-10 text-2xl font-bold text-[hsl(var(--primary))]">
+                        {projectsByYear[year].totalBudget}
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
               </div>
             </TabsContent>
           ))}
+
         </Tabs>
       </div>
     </section>

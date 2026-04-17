@@ -1,29 +1,56 @@
 import { useState } from "react";
+import b1 from "@/assets/1b.png";
+import a1 from "@/assets/1a.png";
+import b2 from "@/assets/2b.png";
+import a2 from "@/assets/2a.png";
+import b3 from "@/assets/3b.png";
+import a3 from "@/assets/3a.png";
+import b4 from "@/assets/4b.png";
+import a4 from "@/assets/4a.png";
+import b5 from "@/assets/5b.png";
+import a5 from "@/assets/5a.png";
+import b6 from "@/assets/6b.png";
+import a6 from "@/assets/6a.png";
+
+
+
 
 const galleryItems = [
   {
     title: "NH-47 Highway Extension",
     type: "Road Construction",
-    before: "https://images.unsplash.com/photo-1517089596392-fb9a9033e05b?w=600&h=400&fit=crop",
-    after: "https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?w=600&h=400&fit=crop",
+    before: b1,
+    after: a1,
   },
   {
     title: "Municipal Drainage System",
     type: "Drainage",
-    before: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=400&fit=crop",
-    after: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&h=400&fit=crop",
+    before: b2,
+    after: a2,
   },
   {
     title: "Green Valley Township",
     type: "Residential",
-    before: "https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?w=600&h=400&fit=crop",
-    after: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop",
+    before:b3 ,
+    after: a3,
   },
   {
     title: "Sewage Treatment Plant",
     type: "Sewage System",
-    before: "https://images.unsplash.com/photo-1590846083693-f23fdede3a7e?w=600&h=400&fit=crop",
-    after: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&h=400&fit=crop",
+    before:b4 ,
+    after: a4,
+  },
+   {
+    title: "Green Valley Township",
+    type: "Residential",
+    before:b5 ,
+    after: a5,
+  },
+  {
+    title: "Sewage Treatment Plant",
+    type: "Sewage System",
+    before:b6 ,
+    after: a6,
   },
 ];
 
@@ -127,13 +154,13 @@ const GallerySection = () => {
                 </div>
 
                 <div className="p-4">
-                  <h3 className="font-display font-bold text-[hsl(var(--foreground))]">
+                  {/* <h3 className="font-display font-bold text-[hsl(var(--foreground))]">
                     {item.title}
                   </h3>
 
                   <p className="text-sm text-[hsl(var(--muted-foreground))]">
                     {item.type}
-                  </p>
+                  </p> */}
                 </div>
               </div>
             );
